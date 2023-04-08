@@ -19,7 +19,7 @@ namespace AdorableCats.Controllers
 
         //api/v1/images/random
         [HttpGet("random")]
-        public async Task<ActionResult<CatImage>> Get()
+        public async Task<ActionResult<CatImage>> GetRandom()
         {
             Random rand = new Random();
             int skipper = rand.Next(0, CatDbContext.Cat_Images.Count());
@@ -34,7 +34,7 @@ namespace AdorableCats.Controllers
         }
 
         [HttpGet("random10")]
-        public async Task<ActionResult<IEnumerable<CatImage>>> Get()
+        public async Task<ActionResult<IEnumerable<CatImage>>> GetRandom10()
         {
             Random rand = new Random();
             int skipper = rand.Next(0, CatDbContext.Cat_Images.Count());
