@@ -14,26 +14,24 @@ namespace AdorableCats.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.4")
-                .HasAnnotation("Relational:MaxIdentifierLength", 64);
+            modelBuilder.HasAnnotation("ProductVersion", "7.0.4");
 
             modelBuilder.Entity("AdorableCats.Models.CatImage", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("varchar(255)");
+                    b.Property<string>("id")
+                        .HasColumnType("TEXT");
 
                     b.Property<int>("Height")
-                        .HasColumnType("int");
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Url")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasColumnType("TEXT");
 
                     b.Property<int>("Width")
-                        .HasColumnType("int");
+                        .HasColumnType("INTEGER");
 
-                    b.HasKey("Id");
+                    b.HasKey("id");
 
                     b.ToTable("Cat_Images");
                 });
