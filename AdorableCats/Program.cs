@@ -10,18 +10,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 
-//MySQL
-//builder.Services.AddDbContext<CatDbContext>(options =>
-//{
-//    var connetionString = builder.Configuration.GetConnectionString("MySQLConnection");
-//    options.UseMySql(connetionString, ServerVersion.AutoDetect(connetionString));
-//});
-
 //SQLite
 builder.Services.AddDbContext<CatDbContext>(options =>
 {
-    //var connetionString = builder.Configuration.GetConnectionString("sqliteConnection");
-    options.UseSqlite(@"Data Source=C:\Temp\Cats.db");
+    //todo path to in project file
+    var path = Path.Combine(Environment.CurrentDirectory, "Data\\Cats.db");
+    var connectionString = @"Data Source=" + path;
+    options.UseSqlite(connectionString);
 });
 
 
@@ -41,8 +36,6 @@ using (IServiceScope scope = applicationBuilder.ApplicationServices.GetRequiredS
     Seeder seeder = new Seeder();
     seeder.Seed(catDbContext);
 }
-
-return; 
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
