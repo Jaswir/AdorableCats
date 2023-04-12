@@ -12,5 +12,9 @@
 ```powershell
 dotnet run AdorableCats.csproj
 ```
+5. Go to following url in your webbrowser:
+```powershell
+https://localhost:7263/swagger/
+```
 
 
