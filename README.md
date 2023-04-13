@@ -3,14 +3,14 @@ Cats are cute, and many people love them. The world, especially now, could use m
 
 ## Getting Started
 
-#Docker
+###Docker
 Make sure you have [installed](https://docs.docker.com/docker-for-windows/install/) and [configured](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Windows-setup#configure-docker) docker in your environment. After that, you can run the below commands from the **/src/** directory and get started with the `eShopOnContainers` immediately.
 
 ```powershell
 docker-compose build
 docker-compose up
 ```
-#Dotnet
+###Dotnet
 1. Type in command line:
 ```powershell
     git clone https://github.com/Jaswir/AdorableCats.git
