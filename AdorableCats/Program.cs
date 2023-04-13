@@ -14,7 +14,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<CatDbContext>(options =>
 {
     //todo path to in project file
-    var path = Path.Combine(Environment.CurrentDirectory, "Data\\Cats.db");
+    var path = Path.Combine(Environment.CurrentDirectory, "Data", "Cats.db");
     var connectionString = @"Data Source=" + path;
     options.UseSqlite(connectionString);
 });
