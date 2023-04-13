@@ -12,7 +12,9 @@ docker-compose build
 docker-compose up
 ```
 
-Now you can reach the Web API's full (swagger) documentation here: 
+Now you can use the `AdorableCats Web API`
+
+You can reach the Web API's full (swagger) documentation here: 
 ```powershell
 http://localhost:5000/swagger/index.html
 ```
