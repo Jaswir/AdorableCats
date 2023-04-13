@@ -5,7 +5,7 @@ Cats are cute, and many people love them. The world, especially now, could use m
 
 ## Docker
 
-Make sure you have [installed](https://docs.docker.com/docker-for-windows/install/) and [configured](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Windows-setup#configure-docker) docker in your environment. After that, you can run the below commands from the **/src/** directory and get started with the `eShopOnContainers` immediately.
+Make sure you have [installed](https://docs.docker.com/docker-for-windows/install/) docker in your environment. After that, you can run the below commands from the **/AdorableCats/AdorableCats** directory and get started with the `AdorableCats Web API` immediately.
 
 ```powershell
 docker-compose build
