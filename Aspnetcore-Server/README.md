@@ -1,25 +1,30 @@
 # AdorableCats
 Cats are cute, and many people love them. The world, especially now, could use more positivity, so we want to create a smooth, endless feed of adorable cat pictures.
 
-## Getting Started
+# Running the Web API
 
-1. Type in command line:
+## Starting up the API with Docker
+
+Make sure you have [installed](https://docs.docker.com/docker-for-windows/install/) docker in your environment. After that, you can run the below commands from the **/AdorableCats** directory and get started with the `AdorableCats Web API` immediately.
+
 ```powershell
-    git clone https://github.com/Jaswir/AdorableCats.git
+docker-compose build
+docker-compose up
 ```
-2. Open terminal and change directory to AdorableCats/AdorableCats 
-3. Install dotnet SDK 6.0 latest version in link below. 
-   Install the x64 version using the installer. 
-    ```powershell
-    https://dotnet.microsoft.com/en-us/download/dotnet/6.0
-    ```
-4. Now type: 
+
+## Now you can use the AdorableCats Web API
+
+You can reach the Web API's full (swagger) documentation here: 
 ```powershell
-dotnet run AdorableCats.csproj
+http://localhost:5000/swagger/index.html
 ```
-5. Go to following url in your webbrowser:
+Get a random Cat Image
 ```powershell
-https://localhost:7263/swagger/
+http://localhost:5000/api/v1/Images/random
+```
+Get 10 random Cat Image
+```powershell
+http://localhost:5000/api/v1/Images/random10
 ```
 
 
