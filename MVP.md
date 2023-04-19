@@ -1,3 +1,5 @@
+# MVP as described by Alexander Chiou - https://github.com/Gear61/Software-Project-Ideas
+
 # The Problem
 Cats are cute, and many people love them. The world, especially now, could use more positivity, so we want to create a smooth, endless feed of adorable cat pictures.
 
@@ -8,8 +10,9 @@ I believe that a polished version of this app can get 10,000+ users, because I b
 - User doesn't see the same photos compared to previous opens
 
 To help with visualization, here are some sample mocks you can work off of:
-![Web](./media/cat_pix_web.png)
-![Mobile](./media/cat_pix_mobile.png)
+![Web](https://user-images.githubusercontent.com/15957528/233097900-a56f4e90-1ac6-404b-92d9-bc2466870bd0.png)
+![Mobile](https://user-images.githubusercontent.com/15957528/233097855-a36584fb-91d7-4d18-825a-f7c0922ff9b2.png)
+
 
 # Best Platform
 **Mobile, but web is okay**
